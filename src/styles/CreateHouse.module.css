@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.HouseForm {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.HouseForm > * {
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    height: 5vh;
+    margin: 1vh 0;
+}
+
+.HouseForm > input {
+    color: black;
+    background-color: silver;
+    text-align: left;
+    width: 20vw;
+    border-radius: 5px;
+    border: solid 2px gray;
+}
+
+.HouseForm > button {
+    background-color: rgb(20,20,20);
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+}

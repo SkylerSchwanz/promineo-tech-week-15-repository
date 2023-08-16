@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { HouseProvider } from './components/HouseProvider';
+import { CreateHouse } from './components/CreateHouse';
+import { HouseList } from './components/HouseList';
+import styles from './styles/App.module.css';
+
+const vegas = require('./las-vegas.jpg')
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={styles.logo}>
+        <h1>
+          <span>SKY</span> REALTY
+        </h1>
+      </div>
+      <div className={styles.vegas}>
+        <img src={vegas} />
+        <h2>Craft Your Ideal Home - Create, Update and Personalize Las Vegas Properties at Your Fingertips</h2>
+      </div>
+      <HouseProvider>
+        <CreateHouse />
+        <HouseList />
+      </HouseProvider>
     </div>
   );
 }
